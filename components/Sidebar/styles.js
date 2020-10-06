@@ -53,7 +53,7 @@ const Container = styled.div`
       .branding-link-text {
         width: 0;
         opacity: 0;
-        transition: margin 300ms ease-in, width 300ms ease-in, opacity 300ms ease-in;
+        transition: margin 300ms ease-in-out, width 300ms ease-in-out, opacity 300ms ease-in-out;
         font-size: 1.2rem;
 
         .renan {

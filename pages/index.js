@@ -1,5 +1,9 @@
+import Container from './styles'
+
 export default function Home() {
   return (
-    <h1>Home Works!</h1>
+    <Container>
+      <h1>Oi, eu sou Renan,<br/> Desenvolverdor react native</h1>
+    </Container>
   )
 }
