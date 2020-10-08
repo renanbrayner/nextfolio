@@ -30,7 +30,8 @@ const Container = styled.div`
         mask: url(./logo.svg);
         mask-size: contain;
         mask-repeat: no-repeat;
-        background: ${props => props.theme.colors.foreground};
+        mask-position: center;
+        background-color: ${props => props.theme.colors.foreground};
         transition: background 200ms ease-in-out;
 
         :hover {

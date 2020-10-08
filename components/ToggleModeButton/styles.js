@@ -16,6 +16,10 @@ const Container = styled.div`
   cursor: pointer;
   box-shadow: 0px 0px 10px 2px #00000044;
   z-index: 10;
+
+  :hover {
+    color: ${props => props.theme.colors.primary};
+  }
 `
 
 export default Container

@@ -19,12 +19,12 @@ const Container = styled.div`
       width: 100%;
       object-fit: cover;
       cursor: pointer;
-      filter: brightness(0.8) grayscale(0.8);
+      filter: opacity(0.8) grayscale(0.98);
       transition: filter 200ms ease-in;
       background-color: ${props => props.theme.colors.background}; 
 
       :hover {
-          filter: brightness(1) grayscale(0);
+          filter: opacity(1) grayscale(0);
       }
     }
 
@@ -47,7 +47,7 @@ const Container = styled.div`
     }
     .text-container {
       position: absolute;
-      padding: 1rem;
+      padding: 0 2rem 2rem 2rem;
       opacity: 0.9;
       bottom: 0px;
       width: 100%;
@@ -77,6 +77,7 @@ const Container = styled.div`
 
           :hover {
           background-color: ${props => props.theme.colors.backgroundHighlight};
+          color: ${props => props.theme.colors.primary}
           }
         }
       }
