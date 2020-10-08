@@ -14,6 +14,7 @@ const Container = styled.div`
   display: grid;
   place-items: center;
   cursor: pointer;
+  box-shadow: 0px 0px 10px 2px #00000044;
 `
 
 export default Container

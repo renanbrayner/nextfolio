@@ -11,6 +11,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   transition: width 300ms ease-in-out;
+  box-shadow: 2px 0px 10px #00000044;
   
   :hover {
     width: 13.5rem;

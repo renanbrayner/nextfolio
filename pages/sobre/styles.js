@@ -12,12 +12,14 @@ const Container = styled.div`
   }
 
   .image {
-    opacity: 0.8;
-    filter: brightness(1.2);
+    opacity: 0.9;
+    filter: brightness(1.1) ;
     width: 50%;
     height: 100%;
-    background: url("./about.png");
-    background-position: center;
+    background-image: url("./about.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-left: 1rem;
   }
 `
