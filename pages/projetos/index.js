@@ -1,8 +1,20 @@
+import Container from './styles'
+
 function Projetos() {
   return (
-    <div>
-      <h1>Projetos Works!</h1>
-    </div>
+    <Container>
+      <div className='grid'>
+        <div className='project'/>
+        <div className='project'/>
+        <div className='project'/>
+        <div className='project'/>
+        <div className='project'/>
+        <div className='project'/>
+      </div>
+      <div className='selected'>
+        <div className='big' /> 
+      </div>
+    </Container>
   )
 }
 

@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     color: ${props => props.theme.colors.foreground};
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
   }
   
   a {

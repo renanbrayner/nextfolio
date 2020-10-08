@@ -12,6 +12,7 @@ const Container = styled.div`
   justify-content: space-between;
   transition: width 300ms ease-in-out;
   box-shadow: 2px 0px 10px #00000044;
+  z-index: 10;
   
   :hover {
     width: 13.5rem;

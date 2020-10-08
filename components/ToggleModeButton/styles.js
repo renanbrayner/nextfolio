@@ -15,6 +15,7 @@ const Container = styled.div`
   place-items: center;
   cursor: pointer;
   box-shadow: 0px 0px 10px 2px #00000044;
+  z-index: 10;
 `
 
 export default Container

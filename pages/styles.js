@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import float from '../styles/animations/float'
 
 const Container = styled.div`
+  padding-left: 2rem;
   height: 100%;
   width: 100%;
   display: flex;
