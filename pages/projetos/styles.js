@@ -64,10 +64,12 @@ const Container = styled.div`
         justify-content: space-between;
 
         .repo {
-          margin-right: auto
+          margin-right: auto;
+          border-radius: 8px;
         }
         
         a {
+          border-radius: 8px;
           background-color: ${props => props.theme.colors.backgroundAlt};
           padding: 12px 0;
           width: 49%;

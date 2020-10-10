@@ -8,5 +8,7 @@ export default {
     backgroundHighlight: '#6272a4',
     foreground: '#f8f8f2',
     primary: '#8be9fd',
+    success: '#50fa7b',
+    error: '#ff5555',
   },
 }

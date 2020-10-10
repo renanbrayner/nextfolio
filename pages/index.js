@@ -10,7 +10,7 @@ export default function Home() {
       <div className='img-container'>
         <Link href='/'>
           <a className='link'>
-            <div className='img'/>
+            <div className='img' />
           </a>
         </Link>
       </div>

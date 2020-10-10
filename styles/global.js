@@ -17,6 +17,24 @@ const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.colors.foreground};
     text-decoration: none;
   }
+
+  input,
+  textarea {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5rem;
+    border: 1px solid ${props => props.theme.colors.backgroundAlt};
+    border-radius: 8px;
+    color: ${props => props.theme.colors.foreground};
+    background: ${props => props.theme.colors.background};
+    filter: brightness(0.75);
+  }
+
+  button {
+    border: none; 
+    border-radius: 8px;
+    outline: none;
+    color: ${props => props.theme.colors.foreground};
+  }
 `
 
 export default GlobalStyle
