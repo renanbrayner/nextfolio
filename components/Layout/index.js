@@ -33,6 +33,12 @@ function Layout({ children }) {
       </div>
       <Sidebar />
       <Container>
+        <div className='error'>
+          <div className='error-text'>
+            <h1 className='red'>Ops!</h1> 
+            <p>o site ainda não existe para celulares e despositivos menores, Estou trabalhando nisso assim que terminar o hackathon!</p>
+          </div>
+        </div>
         { children }
       </Container>
     </ThemeProvider>

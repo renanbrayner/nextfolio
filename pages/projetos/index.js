@@ -15,32 +15,32 @@ function Projetos() {
       <div className='grid'>
         <img 
           className='project' 
-          src="/projects/cats.png" 
+          src="/projects/cats.jpg" 
           onClick={() => handleClick(projectsData.cats)}
         />
         <img
           className='project'
-          src="/projects/todo.png"
+          src="/projects/todo.jpg"
           onClick={() => handleClick(projectsData.todo)}
         />
         <img
           className='project'
-          src="/projects/beTheHero.png"
+          src="/projects/beTheHero.jpg"
           onClick={() => handleClick(projectsData.beTheHero)}
         />
         <img 
           className='project'
-          src="/projects/borderRadius.png"
+          src="/projects/borderRadius.jpg"
           onClick={() => handleClick(projectsData.borderRadius)}
         />
         <img 
           className='project'
-          src="/projects/sorteador.png"
+          src="/projects/sorteador.jpg"
           onClick={() => handleClick(projectsData.sorteador)}
         />
         <img 
           className='project'
-          src="/projects/jogoDaVelha.png"
+          src="/projects/jogoDaVelha.jpg"
           onClick={() => handleClick(projectsData.jogoDaVelha)}
         />
       </div>
