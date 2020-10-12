@@ -23,6 +23,19 @@ const Container = styled.div`
     background-repeat: no-repeat;
     margin-left: 1rem;
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-left: 0;
+    .text {
+      width: 80%;
+      font-size: 0.8rem;
+      height: 50%;
+    }
+    .image {
+      width: 80%;
+    }
+  }
 `
 
 export default Container

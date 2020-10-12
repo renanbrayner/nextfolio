@@ -11,6 +11,14 @@ const Container = styled.div`
   .text {
     width: 50%;
     font-size: 1.5rem;
+    
+    .contact {
+      display: none;
+      justify-content: space-evenly;
+      flex-direction: row;
+      list-style-type: none;
+      margin: 15px 10%;
+    }
   }
 
   .img-container {
@@ -39,6 +47,25 @@ const Container = styled.div`
         }
       }
     } 
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding: 0;
+    .text {
+      text-align: center;
+      width: 100%;
+      font-size: 2.9vw;
+      margin-bottom: auto;
+      .contact {
+        display: flex;
+      }
+    }
+    .img-container {
+      margin-top: 4rem;
+      width: 100%;
+      height: 45%;
+    }
   }
 `
 

@@ -12,7 +12,7 @@ const Container = styled.div`
   justify-content: space-between;
   transition: width 300ms ease-in-out;
   box-shadow: 2px 0px 10px #00000044;
-  z-index: 10;
+  z-index: 100;
   
   :hover {
     width: 13.5rem;
@@ -77,6 +77,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    list-style-type: none;
 
     .nav-link {
       height: 4rem;
@@ -90,6 +91,8 @@ const Container = styled.div`
   }
 
   .contact {
+    list-style-type: none;
+
     .contact-item {
       height: 2rem;
       width: 100%;
@@ -144,6 +147,46 @@ const Container = styled.div`
     transform: translateX(-300px);
     transition: opacity 200ms;
     transition-delay: 300ms;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    width: 100%;
+    height: 4rem;
+    bottom: 0;
+
+    :hover {
+      width: 100%;
+    }
+
+    .branding {
+      display: none;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+
+      .nav-link:hover {
+        background-color: initial;
+        opacity: 1;
+
+        .contact-link-icon,
+        .contact-link-text,
+        .nav-link-icon,
+        .nav-link-text {
+          color: ${props => props.theme.colors.primary};
+        }
+      }
+    }
+
+    .contact {
+      display: none;
+    }
+
+    .tooltip {
+      display: none;
+    }
   }
 `
 

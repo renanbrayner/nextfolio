@@ -20,6 +20,13 @@ const Container = styled.div`
   :hover {
     color: ${props => props.theme.colors.primary};
   }
+
+  @media (max-width: 768px) {
+    top: 1rem;
+    right: 1rem;
+    height: 3rem;
+    width: 3rem;
+  }
 `
 
 export default Container

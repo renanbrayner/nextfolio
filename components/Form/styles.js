@@ -24,6 +24,7 @@ const Container = styled.div`
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+
       
       label {
         margin-right: auto;
@@ -57,6 +58,25 @@ const Container = styled.div`
         :hover {
         filter: brightness(1.2);
         }
+      }
+
+      @media (max-width: 1024px) {
+        .title {
+          font-size: 1.3rem;
+        }
+        label {
+          font-size: 0.9rem;
+        }
+        .submit {
+          font-size: 1rem;
+          height: 2.8rem;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .form {
+        width: 80%;
       }
     }
 `

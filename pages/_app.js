@@ -24,15 +24,12 @@ function MyApp({ Component, pageProps, router }) {
               variants={{
                 pageInitial: {
                   opacity: 0,
-                  transform: 'scale(0.95, 0.95)',
                 },
                 pageAnimate: {
                   opacity: 1,
-                  transform: 'scale(1, 1)',
                 },
                 pageExit: {
                   opacity: 0,
-                  transform: 'scale(1.15, 1.15)',
                 },
               }}
             >

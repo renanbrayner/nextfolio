@@ -18,7 +18,7 @@ const Container = styled.div`
 
       .error {
         font-size: 2.5rem;
-        font-weight: bold;
+        color: ${props => props.theme.colors.error}
       }
 
       .download {
@@ -26,6 +26,10 @@ const Container = styled.div`
         text-decoration: underline;
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
   }
 `
 

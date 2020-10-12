@@ -12,7 +12,6 @@ const Container = styled.div`
     height: 100%;
     display: grid;
     place-items: center;
-
   }
 
   .img-container {
@@ -39,9 +38,17 @@ const Container = styled.div`
         mask-repeat: no-repeat;
         background-color: ${props => props.theme.colors.foreground};
         animation: ${float} 3s ease-in-out infinite; 
-      transition: background-color 500ms ease-in-out;
+        transition: background-color 500ms ease-in-out;
       }
+    }
+  }
 
+  @media (max-width: 768px) {
+    .img-container {
+      display: none;
+    }
+    .form-container {
+      width: 100%;
     }
   }
 `

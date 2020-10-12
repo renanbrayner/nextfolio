@@ -47,7 +47,7 @@ const Container = styled.div`
     }
     .text-container {
       position: absolute;
-      padding: 0 2rem 2rem 2rem;
+      padding: 0 1.5rem 2rem 1.5rem;
       opacity: 0.9;
       bottom: 0px;
       width: 100%;
@@ -82,6 +82,49 @@ const Container = styled.div`
           color: ${props => props.theme.colors.primary}
           }
         }
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .text-container {
+        .title {
+          font-size: 1.4rem;
+        }
+        .text {
+          font-size: 0.9rem; 
+        }
+        .buttons {
+          a {
+            padding: 6px 0;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding-bottom: 4rem;
+    .grid {
+      width: 100%;
+      height: 50%;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    .selected{
+      width: 100%;
+      height: 50%;
+      .text-container {
+        position: absolute;
+        opacity: 0.9;
+        width: 100%;
+        height: 50%;
+        box-shadow: 0px -10px 50px 50px ${props => props.theme.colors.background};
+        background-color: ${props => props.theme.colors.background};
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
   }
