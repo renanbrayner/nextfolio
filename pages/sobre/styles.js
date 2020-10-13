@@ -29,7 +29,7 @@ const Container = styled.div`
     padding-left: 0;
     .text {
       width: 80%;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       height: 50%;
     }
     .image {
