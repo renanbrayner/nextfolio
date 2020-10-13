@@ -8,6 +8,20 @@ const Container = styled.div`
   display: flex;
   align-items: center;
 
+  .contact-buttom {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border: 2px solid ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.primary};
+    transition: all 200ms;
+    cursor: pointer;
+    :hover {
+      background-color: ${props => props.theme.colors.primary};
+      color: ${props => props.theme.colors.background};
+    }
+  }
+
   .text {
     width: 50%;
     font-size: 1.5rem;
@@ -65,6 +79,9 @@ const Container = styled.div`
       margin-top: 4rem;
       width: 100%;
       height: 45%;
+    }
+    .contact-buttom {
+      display: none;
     }
   }
 `

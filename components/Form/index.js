@@ -25,6 +25,7 @@ function Form() {
             id='name'
             type='text'
             name='name'
+            placeholder='Nome'
           />
           <label htmlFor='email'>
             Email
@@ -34,6 +35,7 @@ function Form() {
             id='email'
             type='email'
             name='email'
+            placeholder='seu@email.com'
           />
           <ValidationError
             prefix='Email'
@@ -48,6 +50,7 @@ function Form() {
             id='message'
             name='message'
             rows='4'
+            placeholder='Olá! Tenho essa proposta, o que você acha dela?'
           />
           <ValidationError
             prefix='Message'

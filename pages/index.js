@@ -13,26 +13,29 @@ export default function Home() {
     <Container>
       <div className='text'>
         <h1>Oi, eu sou Renan,<br/> Desenvolvedor Web.</h1>
+        <Link href='/contato'>
+          <a className='contact-buttom'>Fale comigo</a>
+        </Link>
         <ul className='contact'>
           <li className='contact-item'>
             <a className='contact-link' href='mailto: renanbrayner@gmail.com'>
               <Mail className='contact-link-icon'/>
-            </a> 
+            </a>
           </li>
           <li className='contact-item'>
             <a className='contact-link' href='https://www.instagram.com/renan.brayner/?hl=pt-br' target='_blank' rel='noreferrer'>
               <Instagram className='contact-link-icon'/>
-            </a> 
+            </a>
           </li>
           <li className='contact-item'>
             <a className='contact-link' href='https://www.github.com/renanbrayner' target='_blank' rel='noreferrer'>
               <GitHub className='contact-link-icon'/>
-            </a> 
+            </a>
           </li>
           <li className='contact-item'>
             <a className='contact-link' href='https://www.linkedin.com/in/renanbrayner/' tanget='_blank' rel='noreferrer'>
               <Linkedin className='contact-link-icon'/>
-            </a> 
+            </a>
           </li>
         </ul>
       </div>
