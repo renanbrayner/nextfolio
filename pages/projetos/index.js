@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useState } from 'react'
 import Container from './styles'
 
@@ -12,6 +13,10 @@ function Projetos() {
 
   return (
     <Container>
+      <Head>
+        <title>Renan Brayner | Meus projetos</title>
+        <meta name="description" content="Feito com NodeJS, ReactJS, React Native e mongodb" />
+      </Head>
       <div className='grid'>
         <img 
           className='project' 

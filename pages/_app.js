@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps, router }) {
     <html lang='pt-br'>
       <Layout>
         <Head>
-          <title>Renan Brayer | DESENVOLVEDOR FULLSTACK</title>
+          <title>Renan Brayner | DESENVOLVEDOR FULLSTACK</title>
           <meta name="description" content="Meu nome é Renan Brayner. Trabalho com desenvolvimento web em sites e sistemas web com javascript. Tenha sites com qualidade e adptados ao mobile." />
         </Head>
         <FormspreeProvider project='1520404215854267925'>

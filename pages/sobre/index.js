@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useState, useEffect } from 'react'
 import Container from './styles'
 
@@ -20,6 +21,13 @@ function Sobre() {
   }, [time])
   return (
     <Container>
+      <Head>
+        <title>Renan Brayner | Sobre mim</title>
+        <meta name="description" content="Meu nome é Renan, tenho 20 anos e sou um
+          desenvolvedor. Estou ingresso na faculdade de análise e
+          desenvolvimento de sistemas com o objetivo de me profissionalizar e
+          busco ingressar no mercado de trabalho..." />
+      </Head>
       <div className='text'>
         <h1>Sobre mim.</h1>
         <p>
