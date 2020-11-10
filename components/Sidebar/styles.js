@@ -140,7 +140,7 @@ const Container = styled.div`
   }
 
   .tooltip {
-    left: 100px;
+    left: 85px;
     position: absolute;
     margin: auto;
     opacity: 0;

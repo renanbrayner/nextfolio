@@ -9,6 +9,7 @@ import {
   FileText,
   MessageSquare,
   Mail,
+  Phone,
   Instagram,
   GitHub,
   Linkedin
@@ -75,6 +76,12 @@ export default function Sidebar() {
           <a className='contact-link' href='mailto: renanbrayner@gmail.com'>
             <Mail className='contact-link-icon'/>
             <span className='contact-link-text tooltip'>Email</span>
+          </a> 
+        </li>
+        <li className='contact-item'>
+		  <a className='contact-link' href='https://wa.me/5581981815475' target='_blank' rel='noreferrer'>
+            <Phone className='contact-link-icon'/>
+            <span className='contact-link-text tooltip'>(81)98181-5475</span>
           </a> 
         </li>
         <li className='contact-item'>
