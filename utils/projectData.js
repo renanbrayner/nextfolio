@@ -20,19 +20,19 @@ const projectsData = {
     repository: 'https://github.com/renanbrayner/Todo',
     site: undefined
   },
+  sorteador: {
+    img: '/projects/electronScreenRecorder.jpg',
+    title: 'Electron Screen Recorded',
+    description: 'Desktop App feito com Electron que grava uma tela ou janela aberta e salva como webm',
+    repository: 'https://github.com/renanbrayner/electron-screen-recorder',
+    site: undefined
+  },
   borderRadius: {
     img: '/projects/borderRadius.jpg',
     title: 'Border Radius Previewer',
     description: 'Site feito com React para ajudar devs a usarem todos os oito valores da propriedade border radius',
     repository: 'https://github.com/renanbrayner/borderradiuspreview',
     site: 'https://renanbrayner.github.io/borderradiuspreview/'
-  },
-  sorteador: {
-    img: '/projects/sorteador.jpg',
-    title: 'Sorteador',
-    description: 'Site feito com React que sorteia uma antre várias opções selecionadas pelo usuário.',
-    repository: 'https://github.com/renanbrayner/sorteador',
-    site: 'https://renanbrayner.github.io/sorteador/'
   },
   jogoDaVelha: {
     img: '/projects/jogoDaVelha.jpg',
