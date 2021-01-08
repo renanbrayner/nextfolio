@@ -38,8 +38,12 @@ const Container = styled.div`
   .selected {
     position: relative;
     width: 50%;
+    transition: width 400ms ease-in-out;
     height: 100%;
     background-color: ${props => props.theme.colors.background}; 
+    :hover {
+        width: 85%;
+    }
     .big {
       height: 100%;
       width: 100%;
