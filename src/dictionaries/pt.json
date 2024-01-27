@@ -1,0 +1,10 @@
+{
+    "navigation": {
+      "test": "testando"
+    },
+    "page": {
+      "home": {
+        "title": "Bem-vindo a NextJs i18n"
+      }
+    }
+}
