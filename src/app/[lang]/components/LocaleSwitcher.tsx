@@ -16,8 +16,18 @@ export default function LocaleSwitcher() {
   };
 
   const getFlag = (locale: Locale) => {
-    if (locale === "pt") return "PT 🇧🇷";
-    if (locale === "en") return "EN 🇺🇸";
+    if (locale === "pt")
+      return (
+        <>
+          <span className="hidden md:inline">PT</span> 🇧🇷
+        </>
+      );
+    if (locale === "en")
+      return (
+        <>
+          <span className="hidden md:inline">EN</span> 🇺🇸
+        </>
+      );
   };
 
   return (
@@ -25,12 +35,7 @@ export default function LocaleSwitcher() {
       {i18n.locales.map((locale) => {
         return (
           <li key={locale}>
-            <Link
-              href={redirectedPathName(locale)}
-              className="rounded p-1 hover:shadow-xl"
-            >
-              {getFlag(locale)}
-            </Link>
+            <Link href={redirectedPathName(locale)}>{getFlag(locale)}</Link>
           </li>
         );
       })}
