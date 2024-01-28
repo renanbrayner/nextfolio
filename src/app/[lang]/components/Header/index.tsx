@@ -3,7 +3,6 @@ import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 import LocaleSwitcher from "./LocaleSwitcher";
 import Image from "next/image";
-import logo from "../../../../public/logo.svg";
 import MenuBtn from "./MenuBtn";
 
 export default async function Header({ lang }: { lang: Locale }) {
@@ -17,7 +16,13 @@ export default async function Header({ lang }: { lang: Locale }) {
         </div>
         <div className="flex flex-1 justify-center">
           <Link href={`/${lang}`}>
-            <Image priority alt="logo" width={36} height={36} src={logo} />
+            <Image
+              priority
+              alt="logo"
+              width={36}
+              height={36}
+              src={`/${lang}/logo.svg`}
+            />
           </Link>
         </div>
         <div className="flex flex-1 justify-end">

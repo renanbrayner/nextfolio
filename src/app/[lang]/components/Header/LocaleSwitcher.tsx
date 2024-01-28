@@ -31,7 +31,7 @@ export default function LocaleSwitcher() {
   };
 
   return (
-    <ul className="flex gap-x-3">
+    <ul className="flex gap-x-3 text-sm">
       {i18n.locales.map((locale) => {
         return (
           <li key={locale}>
