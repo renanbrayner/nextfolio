@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang={params.lang} className="bg-slate-950 text-slate-100">
       <body className={inter.className}>
         <Header lang={params.lang} />
-        <Locomotive>{children}</Locomotive>
+        <main>{children}</main>
         <Menu />
       </body>
     </html>
