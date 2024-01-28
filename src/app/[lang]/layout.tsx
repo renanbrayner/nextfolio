@@ -5,7 +5,7 @@ import { Locale, i18n } from "@/i18n.config";
 import { Inter } from "next/font/google";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
-import Locomotive from "./components/Locomotive";
+import LangWrapper from "./components/LangWrapper";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,11 +25,11 @@ export default function RootLayout({
   params: { lang: Locale };
 }) {
   return (
-    <html lang={params.lang} className="bg-slate-950 text-slate-100">
+    <html lang={params.lang} className="bg-slate-950 text-slate-300">
       <body className={inter.className}>
         <Header lang={params.lang} />
         <main>{children}</main>
-        <Menu />
+        <LangWrapper component={Menu} lang={params.lang} />
       </body>
     </html>
   );
