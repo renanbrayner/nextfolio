@@ -1,9 +1,26 @@
 {
     "navigation": {
-      "about": "Sobre",
-      "work": "Meu trabalho",
-      "experience": "Experiência",
-      "contact": "Contato"
+      "projects": {
+        "title": "Projetos",
+        "subtitle": "Experências web memoráveis"
+      },
+      "experience": {
+        "title": "Experiência",
+        "subtitle": "Um desenvolvedor em constante evolução"
+      },
+      "contact": {
+        "title": "Contato",
+        "subtitle": "Vamos transformar ideias em realidade juntos"
+      },
+      "about": {
+        "title": "Sobre",
+        "subtitle": "Comprometido com a excelência e inovação"
+      },
+      "featured": "Projeto em destaque",
+      "cta": {
+        "question": "Tem uma ideia?",
+        "answer": "Fale comigo"
+      }
     },
     "page": {
       "home": {

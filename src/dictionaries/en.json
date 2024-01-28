@@ -1,6 +1,26 @@
 {
     "navigation": {
-      "test": "testing"
+      "projects": {
+        "title": "Projects",
+        "subtitle": "Memorable web experiences"
+      },
+      "experience": {
+        "title": "Experience",
+        "subtitle": "A developer in constant evolution"
+      },
+      "contact": {
+        "title": "Contact",
+        "subtitle": "Let's turn ideas into reality together"
+      },
+      "about": {
+        "title": "About",
+        "subtitle": "Committed to excellence and innovation"
+      },
+      "featured": "Featured project",
+      "cta": {
+        "question": "Have an idea?",
+        "answer": "Tell me about it"
+      }
     },
     "page": {
       "home": {
