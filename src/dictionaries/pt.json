@@ -1,6 +1,9 @@
 {
     "navigation": {
-      "test": "testando"
+      "about": "Sobre",
+      "work": "Meu trabalho",
+      "experience": "Experiência",
+      "contact": "Contato"
     },
     "page": {
       "home": {
