@@ -1,0 +1,12 @@
+<svg width="685" height="649" viewBox="0 0 685 649" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="50" height="649" fill="white"/>
+<rect x="200" width="50" height="649" fill="white"/>
+<rect x="25" y="250" width="50" height="425" transform="rotate(-90 25 250)" fill="white"/>
+<rect x="25" y="50" width="50" height="250" transform="rotate(-90 25 50)" fill="white"/>
+<rect x="225" y="50" width="50" height="225" transform="rotate(-90 225 50)" fill="white"/>
+<rect x="233" y="649" width="50" height="225" transform="rotate(-90 233 649)" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M453 649C451.998 649 450.998 648.993 450 648.98V599.086C450.998 599.103 451.998 599.111 453 599.111C549.65 599.111 628 520.935 628 424.5C628 328.065 549.65 249.889 453 249.889C451.998 249.889 450.998 249.897 450 249.914V200.02C450.998 200.007 451.998 200 453 200C577.264 200 678 300.512 678 424.5C678 548.488 577.264 649 453 649Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M450 250C519.036 250 575 194.036 575 125C575 55.9644 519.036 0 450 0V50C491.421 50 525 83.5786 525 125C525 166.421 491.421 200 450 200V250Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M250 250C319.036 250 375 194.036 375 125C375 55.9644 319.036 0 250 0V50C291.421 50 325 83.5786 325 125C325 166.421 291.421 200 250 200V250Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M225.355 190L190 225.355L613.645 649H684.355L225.355 190Z" fill="white"/>
+</svg>
