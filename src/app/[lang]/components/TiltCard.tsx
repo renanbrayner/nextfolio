@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { MouseEventHandler } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 export default function TiltCard({
@@ -29,9 +29,12 @@ export default function TiltCard({
     ["-12.5deg", "12.5deg"],
   );
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (e.target == null) return;
     try {
-      const rect = e.target.getBoundingClientRect();
+      const targetElement = e.target as HTMLDivElement; //
+
+      const rect = targetElement.getBoundingClientRect();
 
       const width = rect.width;
       const height = rect.height;
@@ -56,7 +59,7 @@ export default function TiltCard({
 
   return (
     <motion.div
-      onMouseMove={handleMouseMove}
+      onMouseMove={(e) => handleMouseMove(e)}
       onMouseLeave={handleMouseLeave}
       style={{
         rotateY,
