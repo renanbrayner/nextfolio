@@ -6,6 +6,7 @@ import AnimatedLink from "./AnimatedLink";
 import projectsImg from "../../../../public/projects/argos.png";
 import Link from "next/link";
 import Image from "next/image";
+import TiltCard from "../TiltCard";
 
 /**
  * Menu for mobile and desktop
@@ -28,7 +29,7 @@ export default function Menu({
    */
   const BlurBg = () => {
     return (
-      <div className="absolute left-0 top-0 grid h-full grid-cols-3 place-items-center gap-4 overflow-hidden border p-40 opacity-40 blur-[128px]">
+      <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 grid grid-cols-3 place-items-center gap-4 overflow-hidden border p-40 opacity-40 blur-[128px]">
         {/* background gradient effect */}
         <div className="relative h-72 w-44 animate-[shiftaround-1_31s_linear_infinite] rounded-full" />
         <div className="relative h-44 w-60 animate-[shiftaround-2_41s_linear_infinite] rounded-full" />
@@ -46,8 +47,8 @@ export default function Menu({
       className="fixed bottom-0 top-0 z-10 w-full -translate-x-[110%] overflow-hidden bg-gray-950 outline transition-transform duration-1000 ease-in-out data-[open=true]:translate-x-0 data-[open=false]:delay-700"
     >
       <BlurBg />
-      <div className="grid h-full grid-rows-2 px-4 pb-16 pt-40 md:grid-cols-2 md:px-[8vw]">
-        <div className="row-span-2 flex flex-col justify-between">
+      <div className="flex h-full flex-col gap-8 px-4 pb-16 pt-40 md:flex-row md:px-[10vw]">
+        <div className="flex basis-full flex-col justify-between">
           <div
             data-open={isMenuOpen}
             className="opacity-0 transition-opacity duration-500 data-[open=true]:opacity-100 data-[open=true]:delay-[1100ms]"
@@ -89,35 +90,30 @@ export default function Menu({
               heading={navigation.about.title}
               subheading={navigation.about.subtitle}
               href="/fizz"
-              imgSrc="/foo.jpeg"
+              imgSrc="/about.jpg"
             />
           </div>
         </div>
         <div
           data-open={isMenuOpen}
-          className="flex flex-col items-center gap-6 pt-4 opacity-0 transition-opacity delay-[400ms] duration-500 data-[open=true]:opacity-100 data-[open=true]:delay-[1500ms]"
+          className="flex basis-full flex-col gap-2 pt-4 opacity-0 transition-opacity delay-[400ms] duration-500 data-[open=true]:opacity-100 data-[open=true]:delay-[1500ms]"
         >
-          <span>{navigation.cta.question}</span>
-          <Link className="z-10 text-5xl font-bold" href={`/${lang}/contact`}>
-            {navigation.cta.answer}
+          <div className="flex flex-col items-center pb-9 pt-3">
+            <span>{navigation.cta.question}</span>
+            <Link
+              className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text py-4 text-5xl font-bold text-slate-200 transition-all hover:scale-105 hover:text-transparent"
+              href={`/${lang}/contact`}
+            >
+              {navigation.cta.answer}
+            </Link>
+          </div>
+          <strong className="pb-3 text-xl">{navigation.featured}</strong>
+          <Link href={`/${lang}/projects`} className="h-full">
+            <TiltCard
+              cardOuterClass="rounded-xl bg-slate-500/50 h-full p-3"
+              cardInnerClass="h-full w-full bg-featured-project object-center rounded-xl"
+            />
           </Link>
-        </div>
-        <div
-          data-open={isMenuOpen}
-          className="flex items-center justify-center gap-3 opacity-0 transition-opacity delay-[400ms] duration-500 data-[open=true]:opacity-100 data-[open=true]:delay-[1500ms]"
-        >
-          <div className="flex h-full flex-col items-start justify-center gap-4">
-            <div className="w-full">
-              <strong>{navigation.featured}</strong>
-            </div>
-            <img
-              src="/en/argos.png"
-              height="100px"
-              width="auto"
-              className="h-4/5 rounded-xl"
-              alt=""
-            />
-          </div>
         </div>
       </div>
     </div>

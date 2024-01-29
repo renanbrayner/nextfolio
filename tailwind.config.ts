@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "featured-project": "url('/en/argos.png')",
+      },
       keyframes: {
         "shiftaround-1": {
           "0%": {
