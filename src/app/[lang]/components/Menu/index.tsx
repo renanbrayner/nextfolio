@@ -24,12 +24,15 @@ export default function Menu({
     state: { isMenuOpen },
   } = useLayoutStore();
 
-  /**
-   * Background blur effect
-   */
-  const BlurBg = () => {
-    return (
-      <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 grid grid-cols-3 place-items-center gap-4 overflow-hidden border opacity-40 blur-[128px] md:p-40">
+  return (
+    <div
+      data-open={isMenuOpen}
+      className="fixed bottom-0 top-0 z-10 w-full -translate-x-[110%] overflow-hidden bg-slate-950 shadow-[2px_0px_0px_rgba(255,255,255,0.5)] transition-transform duration-1000 ease-in-out data-[open=true]:translate-x-0 data-[open=false]:delay-700"
+    >
+      <div
+        data-open={isMenuOpen}
+        className="fixed bottom-0 left-0 right-0 top-0 -z-10 grid grid-cols-3 place-items-center gap-4 overflow-hidden border opacity-0 blur-[128px] transition-opacity duration-1000 data-[open=true]:opacity-40 data-[open=true]:delay-1000 data-[open=true]:duration-[3s] md:p-40"
+      >
         {/* background gradient effect */}
         <div className="relative h-72 w-44 animate-[shiftaround-1_31s_linear_infinite] rounded-full" />
         <div className="relative h-44 w-60 animate-[shiftaround-2_41s_linear_infinite] rounded-full" />
@@ -38,15 +41,7 @@ export default function Menu({
         <div className=" relative h-60 w-32 animate-[shiftaround-5_43s_linear_infinite] rounded-full" />
         <div className="relative h-60 w-60 animate-[shiftaround-4_37s_linear_infinite] rounded-full" />
       </div>
-    );
-  };
 
-  return (
-    <div
-      data-open={isMenuOpen}
-      className="fixed bottom-0 top-0 z-10 w-full -translate-x-[110%] overflow-hidden shadow-[2px_0px_0px_rgba(255,255,255,0.5)] transition-transform duration-1000 ease-in-out data-[open=true]:translate-x-0 data-[open=false]:delay-700"
-    >
-      <BlurBg />
       <div className="flex h-full flex-col gap-8 px-4 pb-16 pt-28 md:flex-row md:px-[10vw] md:pt-40">
         <div className="flex basis-full flex-col justify-between">
           <div
