@@ -29,7 +29,7 @@ export default function Menu({
    */
   const BlurBg = () => {
     return (
-      <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 grid grid-cols-3 place-items-center gap-4 overflow-hidden border p-40 opacity-40 blur-[128px]">
+      <div className="absolute bottom-0 left-0 right-0 top-0 -z-10 grid grid-cols-3 place-items-center gap-4 overflow-hidden border opacity-40 blur-[128px] md:p-40">
         {/* background gradient effect */}
         <div className="relative h-72 w-44 animate-[shiftaround-1_31s_linear_infinite] rounded-full" />
         <div className="relative h-44 w-60 animate-[shiftaround-2_41s_linear_infinite] rounded-full" />
@@ -44,10 +44,10 @@ export default function Menu({
   return (
     <div
       data-open={isMenuOpen}
-      className="fixed bottom-0 top-0 z-10 w-full -translate-x-[110%] overflow-hidden bg-gray-950 outline transition-transform duration-1000 ease-in-out data-[open=true]:translate-x-0 data-[open=false]:delay-700"
+      className="fixed bottom-0 top-0 z-10 w-full -translate-x-[110%] overflow-hidden shadow-[2px_0px_0px_rgba(255,255,255,0.5)] transition-transform duration-1000 ease-in-out data-[open=true]:translate-x-0 data-[open=false]:delay-700"
     >
       <BlurBg />
-      <div className="flex h-full flex-col gap-8 px-4 pb-16 pt-40 md:flex-row md:px-[10vw]">
+      <div className="flex h-full flex-col gap-8 px-4 pb-16 pt-28 md:flex-row md:px-[10vw] md:pt-40">
         <div className="flex basis-full flex-col justify-between">
           <div
             data-open={isMenuOpen}
@@ -96,8 +96,9 @@ export default function Menu({
         </div>
         <div
           data-open={isMenuOpen}
-          className="flex basis-full flex-col gap-2 pt-4 opacity-0 transition-opacity delay-[400ms] duration-500 data-[open=true]:opacity-100 data-[open=true]:delay-[1500ms]"
+          className="hidden basis-full flex-col gap-2 pt-4 opacity-0 transition-opacity delay-[400ms] duration-500 data-[open=true]:opacity-100 data-[open=true]:delay-[1500ms] md:flex"
         >
+          {/* Desktop */}
           <div className="flex flex-col items-center pb-9 pt-3">
             <span>{navigation.cta.question}</span>
             <Link
@@ -107,10 +108,10 @@ export default function Menu({
               {navigation.cta.answer}
             </Link>
           </div>
-          <strong className="pb-3 text-xl">{navigation.featured}</strong>
+          <span className="pb-2 text-xl">{navigation.featured}</span>
           <Link href={`/${lang}/projects`} className="h-full">
             <TiltCard
-              cardOuterClass="rounded-xl bg-slate-500/50 h-full p-3"
+              cardOuterClass="rounded-xl bg-slate-500/50 h-full p-3 border border-slate-300/20"
               cardInnerClass="h-full w-full bg-featured-project object-center rounded-xl"
             />
           </Link>
