@@ -13,7 +13,7 @@ export default function MenuBtn() {
     <button onClick={() => toggleMenu()} className="group relative">
       <div
         data-open={isMenuOpen}
-        className="relative flex h-10 w-10 transform items-center justify-center overflow-hidden rounded-full shadow-md ring-0 ring-slate-500 ring-opacity-30 transition-all duration-200 data-[open=true]:ring-2 hover:md:ring-4 data-[open=true]:hover:md:ring-4"
+        className="relative flex h-10 w-10 transform items-center justify-center overflow-hidden rounded-full shadow-md ring-0 ring-slate-500 ring-opacity-30 transition-all duration-200 active:ring-2 data-[open=true]:ring-2 [&:not(:active)]:hover:md:ring-4 [&:not(:active)]:data-[open=true]:hover:md:ring-4"
       >
         <div className="flex h-[20px] w-[20px] origin-center transform flex-col justify-center gap-[3px] overflow-hidden transition-all duration-300">
           <div
