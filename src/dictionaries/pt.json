@@ -24,7 +24,13 @@
     },
     "page": {
       "home": {
-        "title": "Bem-vindo a NextJs i18n"
+        "hero": {
+          "1": "Eu transformo sua",
+          "2": "visão em",
+          "3": "produtos",
+          "4": "reais",
+          "projects": "Ver projetos"
+        }
       }
     }
 }
