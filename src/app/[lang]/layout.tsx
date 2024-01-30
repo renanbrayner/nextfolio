@@ -2,11 +2,23 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n.config";
 
-import { Inter } from "next/font/google";
+import { Bebas_Neue, Rethink_Sans } from "next/font/google";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import LangWrapper from "./components/LangWrapper";
-const inter = Inter({ subsets: ["latin"] });
+
+const headingsFont = Bebas_Neue({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-headings",
+});
+
+const defaultFont = Rethink_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-default",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,8 +37,11 @@ export default function RootLayout({
   params: { lang: Locale };
 }) {
   return (
-    <html lang={params.lang} className="bg-slate-950 text-slate-300">
-      <body className={inter.className}>
+    <html
+      lang={params.lang}
+      className={`${defaultFont.variable} ${headingsFont.variable} bg-slate-950 text-slate-100`}
+    >
+      <body>
         <Header lang={params.lang} />
         <main>{children}</main>
         <LangWrapper component={Menu} lang={params.lang} />

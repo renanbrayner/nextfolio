@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-default)"],
+        display: ["var(--font-headings)"],
+      },
       backgroundImage: {
         "featured-project": "url('/en/argos.png')",
       },
@@ -152,8 +156,19 @@ const config: Config = {
           "50%": { left: "-190px", top: "30px", background: "#04F" },
           "75%": { left: "0px", top: "-120px", background: "#0A4" },
         },
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
       },
       animation: {
+        text: "text 5s ease infinite",
         "shiftaround-1": "shiftaround-1 1s linear infinite",
         "shiftaround-2": "shiftaround-2 1s linear infinite",
         "shiftaround-3": "shiftaround-3 1s linear infinite",
