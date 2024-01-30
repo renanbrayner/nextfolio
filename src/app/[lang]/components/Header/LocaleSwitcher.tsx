@@ -19,23 +19,27 @@ export default function LocaleSwitcher() {
     if (locale === "pt")
       return (
         <>
-          <span className="hidden md:inline">PT</span> 🇧🇷
+          <span className="hidden md:inline">PT</span>{" "}
+          <img className="w-6 md:w-4" width="16px" src="/pt.svg" />
         </>
       );
     if (locale === "en")
       return (
         <>
-          <span className="hidden md:inline">EN</span> 🇺🇸
+          <span className="hidden md:inline">EN</span>
+          <img width="16px" className="w-6 md:w-4" src="/en.svg" />
         </>
       );
   };
 
   return (
-    <ul className="flex gap-x-3 text-sm">
+    <ul className="flex gap-x-1.5 text-sm">
       {i18n.locales.map((locale) => {
         return (
           <li key={locale}>
-            <Link href={redirectedPathName(locale)}>{getFlag(locale)}</Link>
+            <Link className="flex gap-0.5" href={redirectedPathName(locale)}>
+              {getFlag(locale)}
+            </Link>
           </li>
         );
       })}
