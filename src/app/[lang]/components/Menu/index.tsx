@@ -103,7 +103,9 @@ export default function Menu({
               {navigation.cta.answer}
             </Link>
           </div>
-          <span className="pb-2 text-xl">{navigation.featured}</span>
+          <span className="font-display pb-2 text-xl">
+            {navigation.featured}
+          </span>
           <Link href={`/${lang}/projects`} className="h-full">
             <TiltCard
               cardOuterClass="rounded-xl bg-slate-500/50 h-full p-3 border border-slate-300/20"
