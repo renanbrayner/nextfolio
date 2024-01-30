@@ -13,21 +13,21 @@ export default function MenuBtn() {
     <button onClick={() => toggleMenu()} className="group relative">
       <div
         data-open={isMenuOpen}
-        className="relative flex h-10 w-10 transform items-center justify-center overflow-hidden rounded-full shadow-md ring-0 ring-slate-500 ring-opacity-30 transition-all duration-200 hover:ring-4 data-[open=true]:ring-2 data-[open=true]:hover:ring-4"
+        className="relative flex h-10 w-10 transform items-center justify-center overflow-hidden rounded-full shadow-md ring-0 ring-slate-500 ring-opacity-30 transition-all duration-200 data-[open=true]:ring-2 hover:md:ring-4 data-[open=true]:hover:md:ring-4"
       >
-        <div className="flex h-[20px] w-[20px] origin-center transform flex-col justify-around overflow-hidden transition-all duration-300">
+        <div className="flex h-[20px] w-[20px] origin-center transform flex-col justify-center gap-[3px] overflow-hidden transition-all duration-300">
           <div
             data-open={isMenuOpen}
-            className="h-[2px] origin-left transform bg-white transition-all duration-300 data-[open=true]:translate-x-10"
-          ></div>
+            className="h-[2px] origin-left transform bg-white transition-all duration-300 data-[open=true]:translate-x-14"
+          />
           <div
             data-open={isMenuOpen}
-            className="h-[2px] transform rounded bg-white transition-all delay-75 duration-300 data-[open=true]:translate-x-10"
-          ></div>
+            className="h-[2px] transform bg-white transition-all delay-75 duration-300 data-[open=true]:translate-x-14"
+          />
           <div
             data-open={isMenuOpen}
-            className="h-[2px] origin-left transform bg-white transition-all delay-150 duration-300 data-[open=true]:translate-x-10"
-          ></div>
+            className="h-[2px] origin-left transform bg-white transition-all delay-150 duration-300 data-[open=true]:translate-x-14"
+          />
 
           <div
             data-open={isMenuOpen}
@@ -36,11 +36,11 @@ export default function MenuBtn() {
             <div
               data-open={isMenuOpen}
               className="absolute h-[2px] w-5 rotate-0 transform bg-white transition-all delay-300 duration-500 data-[open=true]:rotate-45"
-            ></div>
+            />
             <div
               data-open={isMenuOpen}
               className="absolute h-[2px] w-5 -rotate-0 transform bg-white transition-all delay-300 duration-500 data-[open=true]:-rotate-45"
-            ></div>
+            />
           </div>
         </div>
       </div>
