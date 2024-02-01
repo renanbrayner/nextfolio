@@ -14,7 +14,7 @@ export default async function Home({
 
   return (
     <main className="pt-24">
-      <section className="relative flex flex-col overflow-hidden px-4 pb-6 md:px-[12vw]">
+      <section className="relative flex flex-col overflow-hidden px-4 pb-32 md:px-[12vw] md:pb-6">
         <h1 className="pointer-events-none z-10 pb-40 pt-16 text-5xl font-extrabold text-slate-50 md:w-2/3 md:text-8xl">
           {home.hero["1"]} {home.hero["2"]}{" "}
           <span
@@ -30,7 +30,7 @@ export default async function Home({
             {home.hero["4"]}
           </span>
         </h1>
-        <SplineCanvas className="absolute -bottom-20 -right-24 md:right-0 md:h-full md:w-1/2 md:pb-4" />
+        <SplineCanvas className="absolute bottom-0 left-1/3 top-1/4 aspect-square w-full md:left-auto md:right-[12vw] md:top-auto md:h-full md:w-[unset] md:pb-4" />
       </section>
       <div className="flex justify-between px-4 md:px-[12vw]">
         <span className="relative block w-fit font-display text-xl ease-in-out after:absolute after:block after:h-[1px] after:w-full after:origin-left after:scale-x-50 after:bg-slate-100 after:transition after:duration-500 after:content-[''] after:hover:scale-x-100">
