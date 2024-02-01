@@ -1,6 +1,7 @@
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 import SplineCanvas from "./components/SplineCanvas";
+import LoopingText from "./components/LoopingText";
 
 export default async function Home({
   params: { lang },
@@ -12,9 +13,9 @@ export default async function Home({
   } = await getDictionary(lang);
 
   return (
-    <main className="px-4 pt-24 md:px-[12vw]">
-      <section className="pb- relative flex flex-col">
-        <h1 className="pointer-events-none z-10 w-2/3 pb-40 pt-16 font-extrabold text-slate-50 md:text-8xl">
+    <main className="pt-24">
+      <section className="relative flex flex-col overflow-hidden px-4 pb-6 md:px-[12vw]">
+        <h1 className="pointer-events-none z-10 pb-40 pt-16 text-5xl font-extrabold text-slate-50 md:w-2/3 md:text-8xl">
           {home.hero["1"]} {home.hero["2"]}{" "}
           <span
             data-lang={lang}
@@ -29,13 +30,16 @@ export default async function Home({
             {home.hero["4"]}
           </span>
         </h1>
-        <SplineCanvas className="absolute right-0 h-full w-1/2 pb-4" />
+        <SplineCanvas className="absolute -bottom-20 -right-24 md:right-0 md:h-full md:w-1/2 md:pb-4" />
       </section>
-      <div className="flex justify-between">
+      <div className="flex justify-between px-4 md:px-[12vw]">
         <span className="relative block w-fit font-display text-xl ease-in-out after:absolute after:block after:h-[1px] after:w-full after:origin-left after:scale-x-50 after:bg-slate-100 after:transition after:duration-500 after:content-[''] after:hover:scale-x-100">
           {home.hero.projects}
         </span>
       </div>
+      <section className="overflow-hidden ">
+        <LoopingText />
+      </section>
     </main>
   );
 }
