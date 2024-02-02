@@ -30,7 +30,7 @@ export default function LoopingText() {
 
   return (
     <svg
-      className="full scale-125 text-5xl tracking-wider"
+      className="full scale-125 select-none text-4xl tracking-wider"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
     >
