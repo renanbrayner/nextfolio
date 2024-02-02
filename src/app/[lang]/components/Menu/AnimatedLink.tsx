@@ -64,7 +64,7 @@ export default function AnimatedLink({
               staggerChildren: 0.075,
               delayChildren: 0.25,
             }}
-            className="relative z-10 block text-4xl font-bold text-slate-400 transition-colors duration-500 group-hover:text-slate-50 md:text-6xl"
+            className="relative z-10 block text-4xl font-bold text-slate-400 transition-colors duration-500 group-hover:text-slate-50 md:text-[4.2rem]"
             style={{ textShadow: "0px 0px 25px rgba(0, 0, 0, 0.6)" }}
           >
             {heading.split("").map((l, i) => (
@@ -81,7 +81,7 @@ export default function AnimatedLink({
               </motion.span>
             ))}
           </motion.span>
-          <span className="relative z-10 mt-2 block text-base text-slate-400 transition-colors duration-500 group-hover:text-slate-50">
+          <span className="relative z-10 mt-4 block text-xl text-slate-400 transition-colors duration-500 group-hover:text-slate-50">
             {subheading}
           </span>
         </div>
@@ -97,7 +97,7 @@ export default function AnimatedLink({
             initial: { scale: 0, rotate: "-12.5deg" },
             whileHover: { scale: 1, rotate: "12.5deg" },
           }}
-          transition={{ type: "spring" }}
+          transition={{ type: "spring", damping: 20 }}
           src={imgSrc}
           className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-32 md:w-48"
           alt={`Image representing a link for ${heading}`}
