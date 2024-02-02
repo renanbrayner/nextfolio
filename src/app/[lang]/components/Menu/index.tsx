@@ -42,7 +42,7 @@ export default function Menu({
         <div className="relative h-60 w-60 animate-[shiftaround-4_37s_linear_infinite] rounded-full" />
       </div>
 
-      <div className="flex h-full flex-col gap-8 px-4 pb-16 pt-28 md:flex-row md:px-[10vw] md:pt-40">
+      <div className="flex h-full flex-col gap-8 px-4 pb-24 pt-28 md:flex-row md:px-[12vw] md:pt-36">
         <div className="flex basis-full flex-col justify-between">
           <div
             data-open={isMenuOpen}
@@ -103,7 +103,7 @@ export default function Menu({
               {navigation.cta.answer}
             </Link>
           </div>
-          <span className="font-display pb-2 text-xl">
+          <span className="pb-2 font-display text-xl">
             {navigation.featured}
           </span>
           <Link href={`/${lang}/projects`} className="h-full">
