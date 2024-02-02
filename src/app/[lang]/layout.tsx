@@ -6,6 +6,7 @@ import { Bebas_Neue, Rethink_Sans } from "next/font/google";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import LangWrapper from "./components/LangWrapper";
+import Locomotive from "./components/LocomotiveScroll";
 
 const headingsFont = Bebas_Neue({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
         <Header lang={params.lang} />
         <main>{children}</main>
         <LangWrapper component={Menu} lang={params.lang} />
+        <Locomotive />
       </body>
     </html>
   );
