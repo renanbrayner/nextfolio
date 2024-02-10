@@ -4,6 +4,7 @@ import SplineCanvas from "./components/SplineCanvas";
 import LoopingText from "./components/LoopingText";
 import ProjectCard from "./components/ProjectCard";
 import Timeline from "./components/Timeline";
+import ContactForm from "./components/ContactForm";
 
 export default async function Home({
   params: { lang },
@@ -70,6 +71,9 @@ export default async function Home({
         <h1 className="text-6xl font-bold">Experiência</h1>
         <span className="text-xl">Minha jornada como dev</span>
         <Timeline />
+      </section>
+      <section className="flex h-[120vh] flex-col justify-end">
+        <ContactForm />
       </section>
     </main>
   );
