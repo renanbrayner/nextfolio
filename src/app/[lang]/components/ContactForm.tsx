@@ -31,7 +31,9 @@ export default function ContactForm() {
         }}
         className="flex h-full items-center justify-center border-slate-700/50 bg-slate-950 p-20"
       >
-        <strong className="text-6xl">Entre em contato</strong>
+        <a href="mailto:renanbrayner@gmail.com" className="text-6xl">
+          Entre em contato
+        </a>
       </motion.div>
     </motion.div>
   );
