@@ -10,7 +10,7 @@ export default async function Header({ lang }: { lang: Locale }) {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-40 flex flex-row items-center justify-between px-5 pt-5 md:px-[18vw] md:pt-10">
-      <div className="flex h-16 w-full flex-row items-center justify-between rounded-2xl border-2 border-slate-700/50 bg-slate-900/50 px-7 backdrop-blur-2xl md:rounded-3xl">
+      <div className="flex h-16 w-full flex-row items-center justify-between rounded-2xl border border-slate-700/50 bg-slate-900/50 px-7 backdrop-blur-2xl md:rounded-3xl">
         <div className="flex-1">
           <LocaleSwitcher />
         </div>

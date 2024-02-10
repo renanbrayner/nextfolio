@@ -16,6 +16,9 @@ const config: Config = {
         "featured-project": "url('/en/argos.png')",
       },
       keyframes: {
+        shine: {
+          "100%": { left: "125%" },
+        },
         "shiftaround-1": {
           "0%": {
             left: "-200px",
@@ -168,6 +171,7 @@ const config: Config = {
         },
       },
       animation: {
+        shine: "shine 0.7s",
         text: "text 5s ease infinite",
         "shiftaround-1": "shiftaround-1 1s linear infinite",
         "shiftaround-2": "shiftaround-2 1s linear infinite",

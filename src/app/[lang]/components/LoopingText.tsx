@@ -12,7 +12,7 @@ export default function LoopingText() {
       offsetRef.current -= 1;
 
       // Quando atingir -2586, reiniciar para 0
-      if (offsetRef.current <= -2586) {
+      if (offsetRef.current <= -1939) {
         offsetRef.current = 0;
       }
 
@@ -45,7 +45,7 @@ export default function LoopingText() {
         <textPath fill="#f8fafc" href="#curve" startOffset={offset}>
           QUASAR • VUE • STYLED COMPONENTS • NUXT • REACT • NEXT JS • TYPESCRIPT
           • AXIOS • CYPRESS • ZOD • QUASAR • VUE • STYLED COMPONENTS • NUXT •
-          REACT • NEXT JS • TYPESCRIPT • AXIOS • CYPRESS • ZOD •{" "}
+          REACT • NEXT JS • TYPESCRIPT • AXIOS • CYPRESS • ZOD • QUASAR
         </textPath>
       </text>
     </svg>
