@@ -1,36 +1,97 @@
 {
-    "navigation": {
+  "navigation": {
+    "projects": {
+      "title": "Projects",
+      "subtitle": "Memorable web experiences"
+    },
+    "experience": {
+      "title": "Experience",
+      "subtitle": "A developer in constant evolution"
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Let's turn ideas into reality together"
+    },
+    "about": {
+      "title": "About",
+      "subtitle": "Committed to excellence and innovation"
+    },
+    "featured": "Featured project",
+    "cta": {
+      "question": "Have an idea?",
+      "answer": "Tell me about it"
+    }
+  },
+  "page": {
+    "home": {
+      "hero": {
+        "1": "I make your",
+        "2": "vision into",
+        "3": "real",
+        "4": "products",
+        "projects": "View projects"
+      },
       "projects": {
         "title": "Projects",
-        "subtitle": "Memorable web experiences"
+        "subtitle": "Projects i've worked on",
+        "argos": {
+          "title": "Argos",
+          "text": "Video monitoring system with artificial inteligence"
+        },
+        "mob": {
+          "title": "Mob Service Hub",
+          "text": "System used by the Mob Telecom NOC"
+        },
+        "fixit": {
+          "title": "Fix it platform",
+          "text": "Platform used to make orders, track the status and download 3d models of orthesis"
+        }
       },
       "experience": {
         "title": "Experience",
-        "subtitle": "A developer in constant evolution"
-      },
-      "contact": {
-        "title": "Contact",
-        "subtitle": "Let's turn ideas into reality together"
+        "subtitle": "My journey as a dev",
+        "1": {
+          "title": "Self-taught Beginning",
+          "text": "I began my journey in programming as a self-taught individual, exploring HTML, CSS, and JavaScript through courses by Gustavo Guanabara and events promoted by Rocketseat.",
+          "date": "may 2019"
+        },
+        "2": {
+          "title": "Internship at FixIt",
+          "text": "I joined as a frontend development intern at FixIt, where I had the opportunity to create web applications using technologies like React, Styled Components, and Axios.",
+          "date": "oct 2020"
+        },
+        "3": {
+          "title": "Freelancer for PanOps Solutions",
+          "text": "I started working as a freelancer for PanOps Solutions, collaborating on the development of applications using Vue.js and Quasar.",
+          "date": "feb 2022"
+          },
+        "4": {
+          "title": "Hired by PanOps Solutions",
+          "text": "Later, I was hired as a frontend developer by PanOps Solutions, where I continue to work, expanding my knowledge in Vue.js and exploring new technologies like Nuxt, Tailwind CSS, and various others to create even more robust and innovative solutions.",
+          "date": "dec 2022"
+        },
+        "5": {
+          "title": "Towards New Achievements",
+          "text": "I am ready for new challenges and growth opportunities. Committed to enhancing my skills and expanding my knowledge, I am open to exploring new technologies and methodologies. Every step forward in this journey will contribute to my continuous professional development.",
+          "date": ""
+        }
       },
       "about": {
-        "title": "About",
-        "subtitle": "Committed to excellence and innovation"
-      },
-      "featured": "Featured project",
-      "cta": {
-        "question": "Have an idea?",
-        "answer": "Tell me about it"
-      }
-    },
-    "page": {
-      "home": {
-        "hero": {
-          "1": "I make your",
-          "2": "vision into",
-          "3": "real",
-          "4": "products",
-          "projects": "View projects"
+        "title": "About me",
+        "subtitle": "Tech Wizardry",
+        "text": {
+          "1": "I'm a technology enthusiast always seeking to push the boundaries of programming and creativity.",
+          "2": "I love developing small scripts and customizing the interface of my Linux system to make my experience more efficient and personalized.",
+          "3": "Moreover, I have a fascination for 3D printing, where I can turn ideas into tangible objects.",
+          "4": "I'm constantly on the lookout for new opportunities to expand my knowledge in the world of technology."
         }
-      }
+      },
+      "contact": {
+        "cta": "Have an idea?",
+        "answer": "Let's connect",
+        "connect": "Conect with me:"
+      },
+      "cta": "Talk with me"
     }
+  }
 }

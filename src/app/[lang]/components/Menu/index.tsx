@@ -1,11 +1,7 @@
 "use client";
 
-import { Locale } from "@/i18n.config";
 import { useLayoutStore } from "@/stores/layout";
 import AnimatedLink from "./AnimatedLink";
-import projectsImg from "../../../../public/projects/argos.png";
-import Link from "next/link";
-import Image from "next/image";
 import TiltCard from "../TiltCard";
 
 /**
@@ -13,15 +9,14 @@ import TiltCard from "../TiltCard";
  */
 export default function Menu({
   dictionary,
-  lang,
 }: {
   dictionary: typeof import("@/dictionaries/pt.json");
-  lang: Locale;
 }) {
   const { navigation } = dictionary;
 
   const {
     state: { isMenuOpen },
+    actions: { toggleMenu },
   } = useLayoutStore();
 
   return (
@@ -51,7 +46,8 @@ export default function Menu({
             <AnimatedLink
               heading={navigation.projects.title}
               subheading={navigation.projects.subtitle}
-              href={`/${lang}/fizz`}
+              onClick={toggleMenu}
+              href="#projects"
               imgSrc="/argos.png"
             />
           </div>
@@ -62,7 +58,8 @@ export default function Menu({
             <AnimatedLink
               heading={navigation.experience.title}
               subheading={navigation.experience.subtitle}
-              href="/fizz"
+              onClick={toggleMenu}
+              href="#experience"
               imgSrc="/experience.png"
             />
           </div>
@@ -73,7 +70,8 @@ export default function Menu({
             <AnimatedLink
               heading={navigation.about.title}
               subheading={navigation.about.subtitle}
-              href="/fizz"
+              onClick={toggleMenu}
+              href="#about"
               imgSrc="/about.jpg"
             />
           </div>
@@ -84,7 +82,8 @@ export default function Menu({
             <AnimatedLink
               heading={navigation.contact.title}
               subheading={navigation.contact.subtitle}
-              href="/fizz"
+              onClick={toggleMenu}
+              href="#contact"
               imgSrc="/contact.png"
             />
           </div>
@@ -96,22 +95,23 @@ export default function Menu({
           {/* Desktop */}
           <div className="flex flex-col items-center pb-16 pt-14">
             <span>{navigation.cta.question}</span>
-            <Link
+            <a
+              onClick={toggleMenu}
               className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text py-4 text-5xl font-bold text-slate-200 transition-all hover:scale-105 hover:text-transparent"
-              href={`/${lang}/contact`}
+              href="#contact"
             >
               {navigation.cta.answer}
-            </Link>
+            </a>
           </div>
           <span className="pb-2 font-display text-xl">
             {navigation.featured}
           </span>
-          <Link href={`/${lang}/projects`} className="h-full">
+          <a data-scroll-to href="#projects" className="h-full">
             <TiltCard
               cardOuterClass="rounded-3xl bg-slate-500/50 h-full p-3 border border-slate-300/20"
               cardInnerClass="h-full w-full bg-featured-project object-center rounded-3xl"
             />
-          </Link>
+          </a>
         </div>
       </div>
     </div>

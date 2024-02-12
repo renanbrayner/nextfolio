@@ -1,36 +1,97 @@
 {
-    "navigation": {
+  "navigation": {
+    "projects": {
+      "title": "Projetos",
+      "subtitle": "Experências web memoráveis"
+    },
+    "experience": {
+      "title": "Experiência",
+      "subtitle": "Um desenvolvedor em constante evolução"
+    },
+    "contact": {
+      "title": "Contato",
+      "subtitle": "Vamos transformar ideias em realidade juntos"
+    },
+    "about": {
+      "title": "Sobre",
+      "subtitle": "Comprometido com a excelência e inovação"
+    },
+    "featured": "Projeto em destaque",
+    "cta": {
+      "question": "Tem uma ideia?",
+      "answer": "Fale comigo"
+    }
+  },
+  "page": {
+    "home": {
+      "hero": {
+        "1": "Eu transformo sua",
+        "2": "visão em",
+        "3": "produtos",
+        "4": "reais",
+        "projects": "Ver projetos"
+      },
       "projects": {
         "title": "Projetos",
-        "subtitle": "Experências web memoráveis"
+        "subtitle": "Projetos em que eu já trabalhei",
+        "argos": {
+          "title": "Argos",
+          "text": "Sistema de vídeo monitoramento com inteligência artificial"
+        },
+        "mob": {
+          "title": "Mob Hub de Atendimento",
+          "text": "Sistema utilizado pelo NOC da Mob Telecom"
+        },
+        "fixit": {
+          "title": "Plataforma Fix it",
+          "text": "Plataforma utilizada para fazer pedidos, acompanhar status e baixar modelos 3D de órteses"
+        }
       },
       "experience": {
         "title": "Experiência",
-        "subtitle": "Um desenvolvedor em constante evolução"
-      },
-      "contact": {
-        "title": "Contato",
-        "subtitle": "Vamos transformar ideias em realidade juntos"
+        "subtitle": "Minha jornada como desenvolvedor",
+        "1": {
+          "title": "Começo Autodidata",
+          "text": "Iniciei minha jornada na programação de forma autodidata, explorando HTML, CSS e JavaScript por meio dos cursos do Gustavo Guanabara e dos eventos promovidos pela Rocketseat.",
+          "date": "mai de 2019"
+        },
+        "2": {
+          "title": "Estágio na FixIt",
+          "text": "Entrei como estagiário em desenvolvimento frontend na FixIt, onde tive a oportunidade de criar aplicações web utilizando tecnologias como React, Styled Components e Axios.",
+          "date": "out de 2020"
+        },
+        "3": {
+          "title": "Freelancer pela PanOps Solutions",
+          "text": "Ingressei como freelancer na PanOps Solutions, colaborando no desenvolvimento de aplicações utilizando Vue.js e Quasar.",
+          "date": "fev 2022"
+          },
+        "4": {
+          "title": "Contratado pela PanOps Solutions",
+          "text": "Mais tarde, fui contratado como desenvolvedor frontend pela PanOps Solutions, onde trabalho até hoje, expandindo meu conhecimento em Vue.js e explorando novas tecnologias como Nuxt, Tailwind CSS e diversas outras para criar soluções ainda mais robustas e inovadoras.",
+          "date": "dez de 2022"
+        },
+        "5": {
+          "title": "Rumo a Novas Conquistas",
+          "text": "Estou pronto para novos desafios e oportunidades de crescimento. Comprometido em aprimorar minhas habilidades e expandir meu conhecimento, estou aberto a explorar novas tecnologias e metodologias. Cada passo adiante nesta jornada contribuirá para meu desenvolvimento profissional contínuo.",
+          "date": ""
+        }
       },
       "about": {
-        "title": "Sobre",
-        "subtitle": "Comprometido com a excelência e inovação"
-      },
-      "featured": "Projeto em destaque",
-      "cta": {
-        "question": "Tem uma ideia?",
-        "answer": "Fale comigo"
-      }
-    },
-    "page": {
-      "home": {
-        "hero": {
-          "1": "Eu transformo sua",
-          "2": "visão em",
-          "3": "produtos",
-          "4": "reais",
-          "projects": "Ver projetos"
+        "title": "About me",
+        "subtitle": "Um pouco sobre mim",
+        "text": {
+          "1": "Sou um entusiasta da tecnologia sempre em busca de explorar os limites da programação e da criatividade.",
+          "2": "Adoro desenvolver pequenos scripts e customizar a interface do meu sistema Linux para tornar minha experiência mais eficiente e personalizada.",
+          "3": "Além disso, tenho um fascínio pela impressão 3D, onde posso transformar ideias em objetos tangíveis.",
+          "4": "Estou sempre em busca de novas oportunidades para expandir meu conhecimento no mundo da tecnologia."
         }
-      }
+      },
+      "contact": {
+        "cta": "Have an idea?",
+        "answer": "Let's connect",
+        "connect": "Conect with me:"
+      },
+      "cta": "Talk with me"
     }
+  }
 }

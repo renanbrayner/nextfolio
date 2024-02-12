@@ -10,11 +10,13 @@ export default function AnimatedLink({
   imgSrc,
   subheading,
   href,
+  onClick,
 }: {
   heading: string;
   subheading: string;
   imgSrc: string;
   href: string;
+  onClick?: () => void;
 }) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -45,7 +47,7 @@ export default function AnimatedLink({
   };
 
   return (
-    <Link href={href}>
+    <a onClick={onClick} href={href} data-scroll-to>
       <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}
@@ -120,6 +122,6 @@ export default function AnimatedLink({
           <FiArrowRight className="text-5xl text-slate-50" />
         </motion.div>
       </motion.div>
-    </Link>
+    </a>
   );
 }

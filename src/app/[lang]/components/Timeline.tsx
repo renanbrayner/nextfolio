@@ -1,4 +1,11 @@
-export default function Timeline() {
+export type TimelineItem = {
+  text: string;
+  title: string;
+  date: string;
+  align: "left" | "right";
+};
+
+export default function Timeline({ items }: { items: TimelineItem[] }) {
   const Card = ({
     side,
     title,
@@ -47,41 +54,16 @@ export default function Timeline() {
 
   return (
     <div className="mx-auto flex grid-cols-9 flex-col p-2 py-20 text-slate-50 md:grid">
-      <Card side="left" title="Começo Autodidata" date="mai de 2019">
-        Iniciei minha jornada na programação de forma autodidata, explorando
-        HTML, CSS e JavaScript por meio dos cursos do Gustavo Guanabara e dos
-        eventos promovidos pela Rocketseat.
-      </Card>
-      <Card side="right" title="Estágio na FixIt" date="out de 2020">
-        Entrei como estagiário em desenvolvimento frontend na FixIt, onde tive a
-        oportunidade de criar aplicações web utilizando tecnologias como React,
-        Styled Components e Axios.
-      </Card>
-      <Card
-        side="left"
-        title="Freelancer pela PanOps Solutions"
-        date="fev 2022"
-      >
-        Ingressei como freelancer na PanOps Solutions, colaborando no
-        desenvolvimento de aplicações utilizando Vue.js e Quasar.
-      </Card>
-      <Card
-        side="left"
-        title="Contratado pela PanOps Solutions"
-        date="fev 2022"
-      >
-        Mais tarde, fui contratado como desenvolvedor frontend pela PanOps
-        Solutions, onde trabalho até hoje, expandindo meu conhecimento em Vue.js
-        e explorando novas tecnologias como Nuxt, Tailwind CSS e diversas outras
-        para criar soluções ainda mais robustas e inovadoras.
-      </Card>
-      <Card side="right" title="Rumo a Novas Conquistas" date="fev 2022">
-        Estou pronto para novos desafios e oportunidades de crescimento.
-        Comprometido em aprimorar minhas habilidades e expandir meu
-        conhecimento, estou aberto a explorar novas tecnologias e metodologias.
-        Cada passo adiante nesta jornada contribuirá para meu desenvolvimento
-        profissional contínuo.
-      </Card>
+      {items.map((item) => (
+        <Card
+          key={item.title}
+          side={item.align}
+          title={item.title}
+          date={item.date}
+        >
+          {item.text}
+        </Card>
+      ))}
     </div>
   );
 }
