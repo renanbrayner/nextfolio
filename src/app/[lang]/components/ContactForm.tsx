@@ -90,41 +90,99 @@ export default function ContactForm({
   );
 
   return (
-    <motion.div
-      className="relative h-[110vh] bg-black"
-      style={{
-        padding: paddingValue,
-      }}
-    >
+    <div id="contact">
       <motion.div
+        className="relative hidden h-[110vh] bg-black md:block"
         style={{
-          borderWidth: borderValue,
-          borderRadius: borderRadiusValue,
+          padding: paddingValue,
         }}
-        className="flex h-full flex-col items-center justify-center border-slate-700/50 bg-slate-950 p-20"
       >
-        <h1 className="text-3xl font-bold">{home.contact.cta}</h1>
-        <h1 className="pb-20 pt-10 text-7xl font-bold">
-          {home.contact.answer}
-        </h1>
-        <a href="mailto:renanbrayner@gmail.com">
-          <MouseFollowerButton>
-            <>
-              <span className="font-display text-xl group-hover:hidden">
-                {home.cta}
-              </span>
-              <FiExternalLink className="hidden text-2xl group-hover:block" />
-            </>
-          </MouseFollowerButton>
-        </a>
-      </motion.div>
-      <div
-        id="contact"
-        className="absolute bottom-0 left-0 right-0 flex h-20 items-center justify-between px-4 text-xl md:px-16"
-      >
-        <span>{home.contact.connect}</span>
+        <motion.div
+          style={{
+            borderWidth: borderValue,
+            borderRadius: borderRadiusValue,
+          }}
+          className="flex h-full flex-col items-center justify-center border-slate-700/50 bg-slate-950 p-20"
+        >
+          <h1 className="text-xl font-bold md:text-3xl">{home.contact.cta}</h1>
+          <h1 className="pb-20 pt-10 text-center text-5xl font-bold md:text-7xl">
+            {home.contact.answer}
+          </h1>
+          <a href="mailto:renanbrayner@gmail.com">
+            <MouseFollowerButton>
+              <>
+                <span className="font-display text-xl group-hover:hidden">
+                  {home.cta}
+                </span>
+                <FiExternalLink className="hidden text-2xl group-hover:block" />
+              </>
+            </MouseFollowerButton>
+          </a>
+        </motion.div>
+        <div className="absolute bottom-0 left-0 right-0 flex h-20 items-center justify-center px-4 text-xl md:justify-between md:px-16">
+          <span className="hidden md:inline">{home.contact.connect}</span>
 
-        <ul className="flex gap-10">
+          <ul className="flex gap-14 md:gap-10">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/renanbrayner/"
+                target="_blank"
+                className="flex items-center justify-center gap-2"
+              >
+                <FiLinkedin />
+                <span className="hidden leading-none md:inline">Linkedin</span>
+              </a>
+            </li>
+            <li>
+              <a
+                className="flex items-center justify-center gap-2"
+                href="https://wa.me/5581981815475"
+              >
+                <FiPhone />
+                <span className="hidden leading-none md:inline">Whatsapp</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/renan.brayner/"
+                target="_blank"
+                className="flex items-center justify-center gap-2"
+              >
+                <FiInstagram />
+                <span className="hidden leading-none md:inline">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/renanbrayner"
+                target="_blank"
+                className="flex items-center justify-center gap-2"
+              >
+                <FiGithub />
+                <span className="hidden leading-none md:inline">Github</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </motion.div>
+      {/* MOBILE */}
+      <div className="flex h-full flex-col items-center justify-center border-slate-700/50 bg-slate-950 p-20 md:hidden">
+        <div className="text-center">
+          <h1 className="text-xl font-bold md:text-3xl">{home.contact.cta}</h1>
+          <h1 className="pb-20 pt-10 text-5xl font-bold md:text-7xl">
+            {home.contact.answer}
+          </h1>
+        </div>
+        <a href="mailto:renanbrayner@gmail.com">
+          <div className="flex h-44 w-44 items-center justify-center rounded-full border">
+            <span className="font-display text-xl group-hover:hidden">
+              {home.cta}
+            </span>
+            <FiExternalLink className="hidden text-2xl group-hover:block" />
+          </div>
+        </a>
+
+        <ul className="flex gap-14 pt-20 text-xl md:hidden md:gap-10">
           <li>
             <a
               href="https://www.linkedin.com/in/renanbrayner/"
@@ -132,7 +190,6 @@ export default function ContactForm({
               className="flex items-center justify-center gap-2"
             >
               <FiLinkedin />
-              <span className="leading-none">Linkedin</span>
             </a>
           </li>
           <li>
@@ -141,7 +198,6 @@ export default function ContactForm({
               href="https://wa.me/5581981815475"
             >
               <FiPhone />
-              <span className="leading-none">Whatsapp</span>
             </a>
           </li>
           <li>
@@ -151,7 +207,6 @@ export default function ContactForm({
               className="flex items-center justify-center gap-2"
             >
               <FiInstagram />
-              <span className="leading-none">Instagram</span>
             </a>
           </li>
           <li>
@@ -161,11 +216,10 @@ export default function ContactForm({
               className="flex items-center justify-center gap-2"
             >
               <FiGithub />
-              <span className="leading-none">Github</span>
             </a>
           </li>
         </ul>
       </div>
-    </motion.div>
+    </div>
   );
 }

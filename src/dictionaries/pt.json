@@ -73,11 +73,11 @@
         "5": {
           "title": "Rumo a Novas Conquistas",
           "text": "Estou pronto para novos desafios e oportunidades de crescimento. Comprometido em aprimorar minhas habilidades e expandir meu conhecimento, estou aberto a explorar novas tecnologias e metodologias. Cada passo adiante nesta jornada contribuirá para meu desenvolvimento profissional contínuo.",
-          "date": ""
+          "date": "hoje"
         }
       },
       "about": {
-        "title": "About me",
+        "title": "Sobre mim",
         "subtitle": "Um pouco sobre mim",
         "text": {
           "1": "Sou um entusiasta da tecnologia sempre em busca de explorar os limites da programação e da criatividade.",
@@ -87,11 +87,11 @@
         }
       },
       "contact": {
-        "cta": "Have an idea?",
-        "answer": "Let's connect",
-        "connect": "Conect with me:"
+        "cta": "Tem uma ideia?",
+        "answer": "Vamos conversar",
+        "connect": "Conecte-se comigo:"
       },
-      "cta": "Talk with me"
+      "cta": "Fale comigo"
     }
   }
 }

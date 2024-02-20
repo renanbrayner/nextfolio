@@ -74,24 +74,26 @@ export default async function Home({
         <a
           href="#projects"
           data-scroll-to
-          className="relative block w-fit font-display text-2xl ease-in-out after:absolute after:block after:h-[1px] after:w-full after:origin-left after:scale-x-50 after:bg-slate-100 after:transition after:duration-500 after:content-[''] after:hover:scale-x-100"
+          className="relative block w-fit font-display text-xl ease-in-out after:absolute after:block after:h-[1px] after:w-full after:origin-left after:scale-x-50 after:bg-slate-100 after:transition after:duration-500 after:content-[''] after:hover:scale-x-100 md:text-2xl"
         >
           {home.hero.projects}
         </a>
       </div>
-      <section className="overflow-hidden py-0 md:py-10">
+      <section className="my-10 overflow-hidden py-0 md:my-0 md:py-10">
         <LoopingText />
       </section>
       <section id="projects" className="px-4 md:px-[16vw]">
-        <h1 className="text-6xl font-bold">{home.projects.title}</h1>
-        <span className="text-xl">{home.projects.subtitle}</span>
-        <div className="flex flex-col items-center gap-52 pb-20 pt-52">
+        <h1 className="text-4xl font-bold md:text-6xl">
+          {home.projects.title}
+        </h1>
+        <span className="mx:text-xl text-base">{home.projects.subtitle}</span>
+        <div className="flex flex-col items-center gap-20 pb-20 pt-20 md:gap-52 md:pt-52">
           <ProjectCard
             img="/argos2.png"
             title={home.projects.argos.title}
             description={home.projects.argos.text}
             techs="Vue, Quasar, Leaflet, Tailwindcss, Pinia, Axios"
-            link=""
+            link="https://play.google.com/store/apps/details?id=video.argos.app"
           />
           <ProjectCard
             img="/mob.png"
@@ -111,7 +113,7 @@ export default async function Home({
         <a
           href="#contact"
           data-scroll-to
-          className="relative block w-fit pb-52 font-display text-2xl ease-in-out after:absolute after:block after:h-[1px] after:w-full after:origin-left after:scale-x-50 after:bg-slate-100 after:transition after:duration-500 after:content-[''] after:hover:scale-x-100"
+          className="relative block w-fit pb-20 font-display text-2xl ease-in-out after:absolute after:block after:h-[1px] after:w-full after:origin-left after:scale-x-50 after:bg-slate-100 after:transition after:duration-500 after:content-[''] after:hover:scale-x-100 md:pb-52"
         >
           {home.cta}
         </a>
@@ -123,7 +125,7 @@ export default async function Home({
         <a
           href="#contact"
           data-scroll-to
-          className="relative block w-fit pb-52 font-display text-2xl ease-in-out after:absolute after:block after:h-[1px] after:w-full after:origin-left after:scale-x-50 after:bg-slate-100 after:transition after:duration-500 after:content-[''] after:hover:scale-x-100"
+          className="relative block w-fit pb-20 font-display text-2xl ease-in-out after:absolute after:block after:h-[1px] after:w-full after:origin-left after:scale-x-50 after:bg-slate-100 after:transition after:duration-500 after:content-[''] after:hover:scale-x-100 md:pb-52"
         >
           {home.cta}
         </a>
@@ -132,9 +134,11 @@ export default async function Home({
         <h1 className="text-6xl font-bold">{home.about.title}</h1>
         <span className="text-xl">{home.about.subtitle}</span>
 
-        <div className="flex pt-20">
-          <div className="basis-1/2">FOO</div>
-          <div className="basis-1/2 text-2xl leading-relaxed">
+        <div className="flex flex-col gap-10 pt-20 md:flex-row">
+          <div className="basis-1/2">
+            <img src="/me.png" className="bg-transparent" />
+          </div>
+          <div className="flex basis-1/2 flex-col justify-center text-base leading-relaxed md:text-2xl">
             <p>{home.about.text[1]}</p>
             <p>{home.about.text[2]}</p>
             <p>{home.about.text[3]}</p>
@@ -142,10 +146,12 @@ export default async function Home({
           </div>
         </div>
         <div className="flex justify-center pt-32 text-6xl">
-          <FiChevronsDown className="animate-bounce" />
+          <a data-scroll-to href="#contact">
+            <FiChevronsDown className="animate-bounce" />
+          </a>
         </div>
       </section>
-      <section className="flex h-[120vh] flex-col justify-end">
+      <section className="flex flex-col md:h-[120vh] md:justify-end">
         <ContactForm dictionary={dictionary} />
       </section>
     </main>

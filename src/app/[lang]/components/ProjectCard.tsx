@@ -15,15 +15,15 @@ export default function ProjectCard({
 }) {
   return (
     <a
-      href="link"
+      href={link}
       target="_blank"
-      className="group relative flex aspect-video w-full overflow-hidden rounded-3xl border border-slate-700/50 bg-slate-900/50 brightness-90 transition-all duration-500 ease-in-out hover:scale-[1.02] hover:shadow-xl hover:brightness-100 md:w-4/6"
+      className="group relative flex w-full flex-col overflow-hidden rounded-3xl border border-slate-700/50 bg-slate-900/50 brightness-90 transition-all duration-500 ease-in-out hover:scale-[1.02] md:aspect-video md:w-4/6 md:flex-row md:hover:shadow-xl md:hover:brightness-100"
     >
       <img
         src={img}
-        className="basis-[50%] object-cover saturate-50 transition-all duration-500 group-hover:saturate-100"
+        className="aspect-square basis-[50%] object-cover transition-all duration-500 md:aspect-[unset] md:saturate-50 md:group-hover:saturate-100"
       />
-      <div className="relative flex basis-[50%] flex-col p-10">
+      <div className="relative flex basis-[50%] flex-col gap-4 p-10">
         <a className="absolute right-5 top-5 text-xl">
           <FiExternalLink />
         </a>
@@ -32,7 +32,7 @@ export default function ProjectCard({
         <div className="flex-1" />
         <p className="justify-self-end font-display">{techs}</p>
       </div>
-      <div className="z-5 absolute -inset-full top-0 block h-full w-1/2 -skew-x-12 transform bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine" />
+      <div className="z-5 absolute -inset-full top-0 block h-full w-1/2 -skew-x-12 transform bg-gradient-to-r from-transparent to-white opacity-40 md:group-hover:animate-shine" />
     </a>
   );
 }

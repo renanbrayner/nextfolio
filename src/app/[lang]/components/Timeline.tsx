@@ -1,3 +1,5 @@
+import { FiCalendar } from "react-icons/fi";
+
 export type TimelineItem = {
   text: string;
   title: string;
@@ -20,9 +22,12 @@ export default function Timeline({ items }: { items: TimelineItem[] }) {
     if (side === "left") {
       return (
         <div className="flex flex-row-reverse md:contents">
-          <div className="col-start-1 col-end-5 my-4 ml-auto rounded-xl bg-slate-500 p-4 shadow-md">
+          <div className="col-start-1 col-end-5 my-4 ml-auto flex flex-col rounded-xl bg-slate-500 p-4 shadow-md">
             <h3 className="mb-1 text-lg font-semibold">{title}</h3>
             <p className="text-justify leading-tight">{children}</p>
+            <span className="ml-auto flex items-center gap-1 pt-2">
+              <FiCalendar /> {date}
+            </span>
           </div>
           <div className="relative col-start-5 col-end-6 mr-10 md:mx-auto">
             <div className="flex h-full w-6 items-center justify-center">
@@ -43,9 +48,12 @@ export default function Timeline({ items }: { items: TimelineItem[] }) {
             </div>
             <div className="absolute top-1/2 -mt-3 h-6 w-6 rounded-full bg-slate-500 shadow"></div>
           </div>
-          <div className="col-start-6 col-end-10 my-4 mr-auto rounded-xl bg-slate-500 p-4 shadow-md">
+          <div className="col-start-6 col-end-10 my-4 mr-auto flex flex-col rounded-xl bg-slate-500 p-4 shadow-md">
             <h3 className="mb-1 text-lg font-semibold">{title}</h3>
             <p className="text-justify leading-tight">{children}</p>
+            <span className="ml-auto flex items-center gap-1 pt-2">
+              <FiCalendar /> {date}
+            </span>
           </div>
         </div>
       );

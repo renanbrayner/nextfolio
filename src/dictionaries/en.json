@@ -73,14 +73,14 @@
         "5": {
           "title": "Towards New Achievements",
           "text": "I am ready for new challenges and growth opportunities. Committed to enhancing my skills and expanding my knowledge, I am open to exploring new technologies and methodologies. Every step forward in this journey will contribute to my continuous professional development.",
-          "date": ""
+          "date": "today"
         }
       },
       "about": {
         "title": "About me",
         "subtitle": "Tech Wizardry",
         "text": {
-          "1": "I'm a technology enthusiast always seeking to push the boundaries of programming and creativity.",
+          "1": "I'm a techn enthusiast always seeking to push the boundaries of programming and creativity.",
           "2": "I love developing small scripts and customizing the interface of my Linux system to make my experience more efficient and personalized.",
           "3": "Moreover, I have a fascination for 3D printing, where I can turn ideas into tangible objects.",
           "4": "I'm constantly on the lookout for new opportunities to expand my knowledge in the world of technology."
