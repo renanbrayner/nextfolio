@@ -90,7 +90,7 @@ export default function ContactForm({
   );
 
   return (
-    <div id="contact">
+    <div>
       <motion.div
         className="relative hidden h-[110vh] bg-black md:block"
         style={{
@@ -122,7 +122,7 @@ export default function ContactForm({
         <div className="absolute bottom-0 left-0 right-0 flex h-20 items-center justify-center px-4 text-xl md:justify-between md:px-16">
           <span className="hidden md:inline">{home.contact.connect}</span>
 
-          <ul className="flex gap-14 md:gap-10">
+          <ul id="contact" className="flex gap-14 md:gap-10">
             <li>
               <a
                 href="https://www.linkedin.com/in/renanbrayner/"
@@ -182,7 +182,10 @@ export default function ContactForm({
           </div>
         </a>
 
-        <ul className="flex gap-14 pt-20 text-xl md:hidden md:gap-10">
+        <ul
+          id="contact"
+          className="flex gap-14 pt-20 text-xl md:hidden md:gap-10"
+        >
           <li>
             <a
               href="https://www.linkedin.com/in/renanbrayner/"
