@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Menu from "./components/Menu";
 import LangWrapper from "./components/LangWrapper";
 import Locomotive from "./components/LocomotiveScroll";
+import Head from "next/head";
 
 const headingsFont = Bebas_Neue({
   subsets: ["latin"],

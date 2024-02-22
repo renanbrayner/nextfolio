@@ -21,7 +21,7 @@ export default async function Header({ lang }: { lang: Locale }) {
               alt="logo"
               width={36}
               height={36}
-              src={`/${lang}/logo.svg`}
+              src={`/${lang}/logo.png`}
             />
           </Link>
         </div>
