@@ -5,7 +5,7 @@ import LoopingText from "./components/LoopingText";
 import ProjectCard from "./components/ProjectCard";
 import Timeline, { TimelineItem } from "./components/Timeline";
 import ContactForm from "./components/ContactForm";
-import { FiChevronsDown } from "react-icons/fi";
+import { FiChevronsDown, FiDownload } from "react-icons/fi";
 
 export default async function Home({
   params: { lang },
@@ -14,6 +14,7 @@ export default async function Home({
 }) {
   const dictionary = await getDictionary(lang);
   const {
+    cc,
     page: { home },
   } = dictionary;
 
@@ -122,6 +123,14 @@ export default async function Home({
         <h1 className="text-6xl font-bold">{home.experience.title}</h1>
         <span className="text-xl">{home.experience.subtitle}</span>
         <Timeline items={timeline} />
+        <a
+          href={cc}
+          download
+          className="mx-auto flex w-fit items-center gap-1 rounded-lg border border-slate-700/50 bg-slate-900/50 p-4 text-center text-lg"
+        >
+          <FiDownload />
+          {home.experience.download}
+        </a>
         <a
           href="#contact"
           data-scroll-to
