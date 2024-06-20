@@ -125,11 +125,12 @@ export default async function Home({
         <Timeline items={timeline} />
         <a
           href={cc}
-          download
-          className="mx-auto flex w-fit items-center gap-1 rounded-lg border border-slate-700/50 bg-slate-900/50 p-4 text-center text-lg"
+          download="Renan Brayner CV"
+          className="group mx-auto flex w-fit items-center gap-1 overflow-hidden rounded-xl border border-blue-300/50 bg-blue-500/50 p-4 text-xl brightness-90 transition-all duration-500 ease-in-out hover:scale-[1.02] md:hover:shadow-xl md:hover:brightness-100"
         >
           <FiDownload />
           {home.experience.download}
+          <div className="z-5 absolute -inset-full top-0 block h-full w-1/2 -skew-x-12 transform bg-gradient-to-r from-transparent to-white opacity-40 md:group-hover:animate-shine" />
         </a>
         <a
           href="#contact"
