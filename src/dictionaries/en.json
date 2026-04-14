@@ -34,6 +34,10 @@
       "projects": {
         "title": "Projects",
         "subtitle": "Projects i've worked on",
+        "sebrae": {
+          "title": "Portal de Serviços Sebrae",
+          "text": "I mainly worked on the system for creating and managing landing pages. I implemented cache, WebSocket, NoSQL databases, and other architectural decisions to optimize performance."
+        },
         "argos": {
           "title": "Argos",
           "text": "Video monitoring system with artificial inteligence"

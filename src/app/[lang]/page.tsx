@@ -1,6 +1,5 @@
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
-import SplineCanvas from "./components/SplineCanvas";
 import LoopingText from "./components/LoopingText";
 import ProjectCard from "./components/ProjectCard";
 import Timeline, { TimelineItem } from "./components/Timeline";
@@ -75,7 +74,6 @@ export default async function Home({
             {home.hero["4"]}
           </span>
         </h1>
-        {/* <SplineCanvas className="absolute bottom-0 left-1/3 top-1/4 aspect-square w-full md:left-auto md:right-[16vw] md:top-auto md:h-full md:w-[unset] md:pb-4" /> */}
       </section>
       <div className="flex justify-between px-4 md:px-[16vw]">
         <a
@@ -101,6 +99,13 @@ export default async function Home({
             description={home.projects.argos.text}
             techs="Vue, Quasar, Leaflet, Tailwindcss, Pinia, Axios"
             link="https://play.google.com/store/apps/details?id=video.argos.app"
+          />
+          <ProjectCard
+            img="/sebrae.png"
+            title={home.projects.sebrae.title}
+            description={home.projects.sebrae.text}
+            techs="Vue, PrimeVue, MongoDB, .NET"
+            link=""
           />
           <ProjectCard
             img="/mob.png"
