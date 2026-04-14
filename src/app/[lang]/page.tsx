@@ -47,6 +47,12 @@ export default async function Home({
       text: home.experience[5].text,
       title: home.experience[5].title,
       date: home.experience[5].date,
+      align: "left",
+    },
+    {
+      text: home.experience[6].text,
+      title: home.experience[6].title,
+      date: home.experience[6].date,
       align: "right",
     },
   ];
@@ -88,7 +94,7 @@ export default async function Home({
           {home.projects.title}
         </h1>
         <span className="mx:text-xl text-base">{home.projects.subtitle}</span>
-        <div className="flex flex-col items-center gap-20 pb-20 pt-20 md:gap-52 md:pt-52">
+        <div className="flex flex-col items-center gap-10 pb-20 pt-20 md:gap-20 md:pt-20">
           <ProjectCard
             img="/argos2.png"
             title={home.projects.argos.title}
