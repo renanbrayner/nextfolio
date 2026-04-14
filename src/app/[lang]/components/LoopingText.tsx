@@ -8,18 +8,12 @@ export default function LoopingText() {
 
   useEffect(() => {
     const animate = () => {
-      // Diminuir offset gradativamente
       offsetRef.current -= 1;
-
-      // Quando atingir -2586, reiniciar para 0
-      if (offsetRef.current <= -1939) {
+      // mais é pra esquerda
+      if (offsetRef.current <= -2315) {
         offsetRef.current = 0;
       }
-
-      // Atualizar o estado com o novo valor de offset
       setOffset(offsetRef.current);
-
-      // Agendar a próxima animação
       requestAnimationFrame(animate);
     };
 
@@ -43,9 +37,9 @@ export default function LoopingText() {
       </defs>
       <text>
         <textPath fill="#f8fafc" href="#curve" startOffset={offset}>
-          QUASAR • VUE • STYLED COMPONENTS • NUXT • REACT • NEXT JS • TYPESCRIPT
-          • AXIOS • CYPRESS • ZOD • QUASAR • VUE • STYLED COMPONENTS • NUXT •
-          REACT • NEXT JS • TYPESCRIPT • AXIOS • CYPRESS • ZOD • QUASAR
+          DOCKER • QUASAR • VUE • NUXT • REACT • NEXT JS • TYPESCRIPT • .NET
+          • AXIOS • MONGODB • POSTGRESQL • CYPRESS • ZOD • DOCKER • QUASAR • VUE • NUXT •
+          REACT • NEXT JS • TYPESCRIPT • .NET • AXIOS • MONGODB • POSTGRESQL• CYPRESS • ZOD • DOCKER • QUASAR
         </textPath>
       </text>
     </svg>
