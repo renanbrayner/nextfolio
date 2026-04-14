@@ -36,7 +36,7 @@
         "subtitle": "Projetos em que eu já trabalhei",
         "sebrae": {
           "title": "Sebrae's Services Portal",
-          "text": "I mainly worked on the system for creating and managing landing pages. I implemented cache, WebSocket, NoSQL databases, and other architectural decisions to optimize performance."
+          "text": "Atuei principalmente no sistema de criação e gestão de landing pages, utilizando cache, websocket, No SQL e outras decisões de arquitetura para uma melhor porformance"
         },
         "argos": {
           "title": "Argos",
